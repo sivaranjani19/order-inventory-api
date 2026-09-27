@@ -21,7 +21,7 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - run: pytest -v --html=report.html --self-contained-html
+      - run: python -m pytest -v --html=report.html --self-contained-html
 
       - name: Prepare report for Pages
         if: always()
